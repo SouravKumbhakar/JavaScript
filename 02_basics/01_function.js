@@ -38,4 +38,24 @@ function logingUserMessage(username){ //if i assigned the username="sam" ,the if
 console.log(logingUserMessage("sourav"));// if nothing pass by the referance
                                         //o/p: undefined just loggin
 
-                                        
+ //------------------------------                                       
+function calculateCartPrice(val1,val2,...num1){  //rest operator ...
+    return num1                        // this ... opeator storecd the rest of el.     
+}
+console.log(calculateCartPrice(200,400,2000,500));
+
+//=================================
+
+const user= {
+    username:"sourav",
+    price: 199
+}
+function handleObject(anyobject){
+    console.log(`user name is ${anyobject.username} and price is ${anyobject.price}`);
+}
+
+handleObject(user)
+handleObject({
+    username:"sam",
+    price:400
+})
